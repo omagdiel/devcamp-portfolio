@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
+    MaggiesViewTool::Renderer.copyright 'Owen Magdiel', 'All rights reserved'
   end
 
   def nav_items
