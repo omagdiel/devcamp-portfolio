@@ -20,15 +20,15 @@ class PortfoliosController < ApplicationController
   end
 
   def new
-    @portfolio_items = Portfolio.new
-    3.times {@portfolio_items.technologies.build}
+    @portfolio_item = Portfolio.new
+    3.times {@portfolio_item.technologies.build}
   end
 
   def create
-    @portfolio_items = Portfolio.new(portfolio_params)
+    @portfolio_item = Portfolio.new(portfolio_params)
 
     respond_to do |format|
-      if @portfolio_items.save
+      if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your portfolio was successfully created.' }
         # format.json { render :show, status: :created, location: @portfolio_items }
       else
@@ -39,12 +39,12 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
-    3.times {@portfolio_items.technologies.build}
+    3.times {@portfolio_item.technologies.build}
   end
 
   def update
     respond_to do |format|
-      if @portfolio_items.update(portfolio_params)
+      if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully updated.' }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class PortfoliosController < ApplicationController
   end
 
   def destroy
-    @portfolio_items.destroy
+    @portfolio_item.destroy
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Record was successfully destroyed.' }
     end
@@ -71,11 +71,13 @@ private
     params.require(:portfolio).permit(:title,
                                       :subtitle,
                                       :body,
+                                      :main_image,
+                                      :thumb_image,
                                       technologies_attributes: [:name]
                                       )
 
   end
 
   def set_portfolio_item
-    @portfolio_items = Portfolio.find(params[:id])
+    @portfolio_item = Portfolio.find(params[:id])
   end
