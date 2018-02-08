@@ -19,7 +19,7 @@
         <div class="cover-container">
 
           <%= video_tag(
-            'HardDrivePhotojpeg.mp4',
+            'giphy.mp4',
             id: 'background',
             autoplay: true,
             loop: true,
@@ -33,6 +33,8 @@
           <%= yield %>
 
           <%= render "shared/application_footer" %>
+
+          <%= render "shared/alerts" %>
 
           <%= source_helper("application") %>
 
