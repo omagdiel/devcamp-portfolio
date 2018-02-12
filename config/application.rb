@@ -18,14 +18,15 @@ Bundler.require(*Rails.groups)
 
 module DevcampPortfolio
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.1
+      # Initialize configuration defaults for originally generated Rails version.
+      config.load_defaults 5.1
 
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+      # Settings in config/environments/* take precedence over those specified here.
+      # Application configuration should go into files in config/initializers
+      # -- all .rb files in that directory are automatically loaded.
 
-    # Don't generate system test files.
-    config.generators.system_tests = nil
+      # Don't generate system test files.
+      config.generators.system_tests = nil
+      config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
