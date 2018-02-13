@@ -4,7 +4,7 @@ jQuery(document).on 'turbolinks:load', ->
     App.global_chat = App.cable.subscriptions.create {
       channel: "BlogsChannel"
       blog_id: comments.data('blog-id')
-    }
+    },
     connected: ->
     disconnected: ->
     recieved: (data) ->
