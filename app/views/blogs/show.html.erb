@@ -2,7 +2,7 @@
 
   <h2><%= @blog.title %></h2>
 
-  <nav class="breadcrumb">
+  <nav aria-label="breadcrumb">
     <%= link_to "Home", root_path, class: 'breadcrumb-item'%>
     <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item'%>
 
