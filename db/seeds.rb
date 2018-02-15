@@ -1,3 +1,20 @@
+User.create!(
+  email: "test@test.com",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  name: "Admin User",
+  roles: "site_admin"
+)
+puts "1 Admin user created"
+
+User.create!(
+  email: "test2@test.com",
+  password: "password",
+  password_confirmation: "password",
+  name: "Regular User",
+)
+puts "1 Regular user created"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -16,12 +33,12 @@ Blog.create!(
 end
 puts "10 blog posts created"
 
-5.times do |skill|
-  Skill.create!(
-    title: "Rails #{skill}",
-    percent_utilized: 15
-  )
-end
+Skill.create!(title: "Ruby", percent_utilized: 51)
+Skill.create!(title: "HTML", percent_utilized: 23)
+Skill.create!(title: "JavaScript", percent_utilized: 18)
+Skill.create!(title: "CSS", percent_utilized: 5)
+Skill.create!(title: "CoffeeScript", percent_utilized: 1)
+
 puts "5 skills created"
 
 8.times do|portfolio_item|
