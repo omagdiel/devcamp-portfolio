@@ -19,5 +19,5 @@
 //= require cable
 //= require turbolinks
 //= require popper
-//= require bootstrap-sprockets
 //= require_tree .
+//= require bootstrap-sprockets
