@@ -90,5 +90,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_cable.allowed_request_origins = ['https://owen-magdiel-portfolio.herokuapp.com/', 'http://owen-magdiel-portfolio.herokuapp.com/']
-  config.action_cable.url = “wss://owen-magdiel-portfolio.herokuapp.com/cable”
+  config.action_cable.url = "wss://owen-magdiel-portfolio.herokuapp.com/cable"
 end
