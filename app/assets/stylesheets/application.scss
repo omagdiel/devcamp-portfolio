@@ -159,6 +159,7 @@ h6, .h6 {
   .mastfoot {
     // position: fixed;
     bottom: 0;
+
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -183,11 +184,11 @@ h6, .h6 {
 /*
  * Custom Styles
  */
-
-.card-block {
-  color: black;
-  text-align: left;
+.card {
+  background-color: #4d4d4d;
+  color: white;
 }
+
 
 .auth-links a {
   color: black;
@@ -219,7 +220,7 @@ h6, .h6 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  background: image-url('Love-Coding.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -233,7 +234,7 @@ h6, .h6 {
 }
 
 .tech-news a {
-  color: green;
+  color: #66ff66;
 }
 
 .tech-news > .card {
@@ -241,25 +242,26 @@ h6, .h6 {
 }
 
 .app-card-container {
-  color: black;
+  color: white;
   text-align: left;
 }
 
 .app-card-container > .card {
-  padding: 40px;
+  padding: 20px;
 }
 
 .profile-img {
   border: 1px solid grey;
 }
 .app-card-container a {
-  color: blue;
+  color: #33ccff;
 }
 
 .card-block {
+  color: white;
+  text-align: left;
   padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 10px;
 }
 
 .skill {
@@ -269,4 +271,12 @@ h6, .h6 {
 
 .custom-pages {
   padding-top: 100px;
+}
+
+.login a{
+  color: white;
+}
+
+.new_user a {
+  color: white;
 }

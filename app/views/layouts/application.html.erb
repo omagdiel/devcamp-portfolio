@@ -21,18 +21,20 @@
         <div class="cover-container">
 
           <%= video_tag(
-            'giphy.mp4',
+            'Love-Coding.webm',
             id: 'background',
             autoplay: true,
             loop: true,
             muted: true,
-            poster: 'home_bg.png'
+            poster: 'Love-Coding.jpg'
           )
           %>
 
           <%= render "shared/application_nav" %>
 
-          <%= yield %>
+          <div class="custom-pages">
+            <%= yield %>
+          </div>
 
           <%= render "shared/application_footer" %>
 
