@@ -6,8 +6,8 @@ extend ActiveSupport::Concern
   end
 
   def set_title
-    @page_title = "Devcamp Portfolio | My Portfolio Website"
-    @seo_keywords = "Owen Magdiels Portfolio"
+    @page_title = "Owen Magdiel | My Portfolio Website"
+    @seo_keywords = "Owen Magdiel"
   end
 
 end
